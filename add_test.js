@@ -2,7 +2,7 @@ import chai from 'chai';
 const expect = chai.expect;
 const assert = chai.assert;
 //const {expect,assert} = require('chai');
-import add from '../add.js';
+import add from '/add.js';
 //const fs = require("../add");
 describe("add",()=>{
     it("Add two integers", function(){

@@ -2,7 +2,7 @@ import chai from 'chai';
 const expect = chai.expect;
 const assert = chai.assert;
 //const {expect,assert} = require('chai');
-import at from '../at.js';
+import at from '/at.js';
 //const fs = require("../add");
 const object = { 'a': [{ 'b': { 'c': 3 } }, 4] }
 describe("at",()=>{
