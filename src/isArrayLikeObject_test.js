@@ -8,7 +8,7 @@ import isArrayLikeObject from '../isArrayLikeObject.js';
 
 
     
-describe("Integration Testing for Array Object type checking",()=>{
+describe("Integration Testing for Array Object type checking",()=> {
     it("Case 1", function(){
     const result = isArrayLikeObject([1, 2, 3]);
     expect(result).to.equal(true);

@@ -21,7 +21,8 @@ describe("Divide Integration Testing",()=>{
         
     });
     it("Divide two non-numbers and throws error",function(){
-        try {const string_res = divide("Niladri","Saha");
+        try {
+       const string_res = divide("Niladri","Saha");
        assert.fail("Error thrown!");}
        catch(e){
            expect(e).to.equal("Bad Parameters!");
