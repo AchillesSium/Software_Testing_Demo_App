@@ -17,7 +17,7 @@ describe("Integration Testing for Array type checking",()=>
        
     });
     it("Case 3",function(){
-        const result = isArrayLike(function);
+        const result = isArrayLike(xx);
         expect(result).to.equal(false);
        
     });

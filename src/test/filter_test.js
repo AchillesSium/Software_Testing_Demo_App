@@ -29,4 +29,4 @@ describe("Truthy Testing using everyIterates over elements of `array`, returning
         
 
 
-    });
+    
