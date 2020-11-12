@@ -12,10 +12,7 @@ before_script: chmod 0777 ./node_modules/.bin/mocha
 script: 
     - npm test
     - npm run build
-
-after_success:
-    - npm run coverage
-    - npm run coveralls
+    - jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
 
 deploy: 
     provider: pages
