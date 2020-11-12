@@ -9,7 +9,7 @@
   "type": "module",
   "scripts": {
     "test": "mocha 'src/test/*_test.js'",
-    "coverage": "npm run test && jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "coverage": "npm run test && jest --coverage && coveralls < coverage/lcov.info"
   },
   "author": "",
   "license": "ISC",
