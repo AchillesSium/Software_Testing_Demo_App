@@ -10,9 +10,9 @@ install:
 before_script: chmod 0777 ./node_modules/.bin/mocha
 
 script: 
-    - jest --coverage && coveralls < coverage/lcov.info
     - npm test
     - npm run build
+    - npm run coverage
 
 deploy: 
     provider: pages

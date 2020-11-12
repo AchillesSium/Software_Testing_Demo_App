@@ -8,7 +8,8 @@
   },
   "type": "module",
   "scripts": {
-    "test": "mocha 'src/test/*_test.js'"
+    "test": "mocha 'src/test/*_test.js'",
+    "coverage": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "author": "",
   "license": "ISC",
