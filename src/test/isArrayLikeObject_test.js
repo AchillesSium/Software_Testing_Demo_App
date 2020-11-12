@@ -5,7 +5,8 @@ const assert = chai.assert;
 //const {expect,assert} = require('chai');
 //import isArrayLikeObject from '../isArrayLikeObject.js';
 //const fs = require("../add")
-
+let x = false;
+let y = "Name";
 
     
 describe("Integration Testing for Array Object type checking",()=> {
@@ -14,7 +15,7 @@ describe("Integration Testing for Array Object type checking",()=> {
     expect(result).to.equal(true);
     });
     it("Case 2 non-array object",function(){
-        const result = isArrayLikeObject(x.id);
+        const result = isArrayLikeObject(x);
         expect(result).to.equal(false);
        
     });

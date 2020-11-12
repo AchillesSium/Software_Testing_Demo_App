@@ -13,12 +13,13 @@ describe("Truthy Testing using everyIterates over elements of `array`, returning
     it("Case 1", function(){
     const result = filter(users, ({ active }) => active);
     console.log(result);
-    expect(result).to.equal(false);
+    expect(result).to.deep.equal([ { user: 'barney', active: true } ]);
     });
     it("Case 2",function(){
         const result = filter(users, ({ active }) => !active);
         console.log(result);
-        expect(result).to.equal(false);
+        expect(result).to.deep.equal([ { user: 'fred', active: false } ]
+        );
        
     });
     

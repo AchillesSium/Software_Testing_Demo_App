@@ -8,6 +8,7 @@ import divide from '../divide.js';
 describe("Divide Integration Testing",()=>{
     it("Case 1 for integers operands > 0", function(){
     const result = divide(5,2)
+   // console.log(result);
     expect(result).to.equal(2.5);
     });
     it("Case 2 for float operands > 0",function(){

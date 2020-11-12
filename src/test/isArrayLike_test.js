@@ -4,6 +4,8 @@ const assert = chai.assert;
 //const {expect,assert} = require('chai');
 import isArrayLike from '../isArrayLike.js';
 //const fs = require("../add")
+let x = true;
+let xx = undefined;
 
 describe("Integration Testing for Array type checking",()=>
 {
@@ -12,7 +14,7 @@ describe("Integration Testing for Array type checking",()=>
     expect(result).to.equal(true);
     });
     it("Case 2",function(){
-        const result = isArrayLike(x.id);
+        const result = isArrayLike(x);
         expect(result).to.equal(false);
        
     });

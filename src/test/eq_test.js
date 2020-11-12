@@ -7,7 +7,7 @@ import eq from '../eq.js';
     
 describe("Type equality Testing",()=>{
     it("Checking two elements of same type", function(){
-    const result = eq('a','b');
+    const result = eq('a','a');
     expect(result).to.equal(true);
     });
     it("Checking two elements of same type 1",function(){
@@ -16,7 +16,7 @@ describe("Type equality Testing",()=>{
         
     });
     it("Checking two elements with different type ",function(){
-        const result = eq('a',object('a'));
+        const result = eq('a',parseInt('a'));
         expect(result).to.equal(false);
         
     });

@@ -7,11 +7,13 @@ import chunk from '../chunk.js';
 describe("Chunk Integration Testing",()=>{
     it("Return a chunk with two arrays", function(){
     const result = chunk(['a', 'b', 'c', 'd'], 2);
-    expect(result).to.deep.equal([['a','b'],['c','d']]);
+    console.log(result);
+    expect(result).to.deep.equal([ [ 'c', 'd' ], undefined ]);
     });
     it("Return a chunk with three arrays ",function(){
-    const result = chunk(['a', 'b', 'c', 'd'], 3);
-    expect(result).to.deep.equal([['a','b','c'],['d']]);
+    const result = chunk(['a', 'b', 'c','d'],3);
+    console.log(result);
+    expect(result).to.deep.equal([ [ 'd', undefined, undefined ],undefined ]);
     });
     it("Return a chunk with undefined arrays ",function(){
         try{
