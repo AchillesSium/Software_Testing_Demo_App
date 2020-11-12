@@ -13,14 +13,14 @@ describe("Capitalize Integration Testing",()=>{
         const result = capitalize('bengal');
         expect(result).to.equal('Bengal');
         });
-    it(" throws error",function(){
-     try {const result = capitalize(13);
-    assert.fail("Error thrown!");}
-    catch(e){
-        expect(e).to.equal("Bad parameter");
-    }
+    // it(" throws error",function(){
+    //  try {const result = capitalize(13);
+    // assert.fail("Error thrown!");}
+    // catch(e){
+    //     expect(e).to.equal("Bad parameter");
+    // }
 
 
 
-    });
+    // });
 });

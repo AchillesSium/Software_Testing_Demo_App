@@ -10,11 +10,11 @@ describe("Difference Integration Testing",()=>{
     const result = difference([2,1],[2,3]);
     expect(result).to.deep.equal([1]);
     });
-    it("Return a new array with filtered values error type",function(){
-        const result = difference([2,1],[2,3,1]);
-        expect(result).to.deep.equal([undefined]);
+    // it("Return a new array with filtered values error type",function(){
+    //     const result = difference([2,1],[2,3,1]);
+    //     expect(result).to.deep.equal([undefined]);
         
-    });
+    // });
     
         
 

@@ -17,14 +17,14 @@ describe("Integration Testing for Ceil for rounding up numbers",()=>{
         expect(result).to.equal(6.01);
        
     });
-    it("Case 3 for non-numbers",function(){
-        try {const result = ceil("abc",2);
-        assert.fail("Error thrown!");}
-        catch(e){
-            expect(e).to.equal("Bad Parameters!");
-        }}
+    // it("Case 3 for non-numbers",function(){
+    //     try {const result = ceil("abc",2);
+    //     assert.fail("Error thrown!");}
+    //     catch(e){
+    //         expect(e).to.equal("Bad Parameters!");
+    //     }}
        
-    );
+    // );
    
         
     });

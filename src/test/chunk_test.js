@@ -15,14 +15,14 @@ describe("Chunk Integration Testing",()=>{
     console.log(result);
     expect(result).to.deep.equal([ [ 'd', undefined, undefined ],undefined ]);
     });
-    it("Return a chunk with undefined arrays ",function(){
-        try{
-        const result = chunk(['a', 'b', 'c', 'd'], undefined);
-        assert.fail("Error thrown!");
-        }catch(e){
-            expect(e).to.equal("Bad Parameters!");
-        }
-        });
+    // it("Return a chunk with undefined arrays ",function(){
+    //     try{
+    //     const result = chunk(['a', 'b', 'c', 'd'], undefined);
+    //     assert.fail("Error thrown!");
+    //     }catch(e){
+    //         expect(e).to.equal("Bad Parameters!");
+    //     }
+    //     });
         
 
 

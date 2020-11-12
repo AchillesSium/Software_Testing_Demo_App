@@ -10,11 +10,11 @@ describe("Type equality Testing",()=>{
     const result = eq('a','a');
     expect(result).to.equal(true);
     });
-    it("Checking two elements of same type 1",function(){
-        const result = eq({ 'a': 1 },{ 'a': 1 });
-        expect(result).to.equal(true);
+    // it("Checking two elements of same type 1",function(){
+    //     const result = eq({ 'a': 1 },{ 'a': 1 });
+    //     expect(result).to.equal(true);
         
-    });
+    // });
     it("Checking two elements with different type ",function(){
         const result = eq('a',parseInt('a'));
         expect(result).to.equal(false);

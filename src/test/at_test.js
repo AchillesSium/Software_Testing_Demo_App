@@ -15,14 +15,14 @@ describe("at",()=>{
 
     expect(result1).to.deep.equal([3,undefined]);
     });
-    it(" throws error",function(){
-     try {const result = at(object,['a[0].b.c', NaN]);
-    assert.fail("Error thrown!");}
-    catch(e){
-        expect(e).to.equal("Bad path!");
-    }
+    // it(" throws error",function(){
+    //  try {const result = at(object,['a[0].b.c', NaN]);
+    // assert.fail("Error thrown!");}
+    // catch(e){
+    //     expect(e).to.equal("Bad path!");
+    // }
 
 
 
-    });
+    // });
 });

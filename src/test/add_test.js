@@ -13,14 +13,14 @@ describe("add",()=>{
     const result1 = add(10.0,23.5);
     expect(result1).to.equal(33.5);
     });
-    it("Add two Strings and throws error",function(){
-     try {const string_res = add("Niladri","Saha");
-    assert.fail("Error thrown!");}
-    catch(e){
-        expect(e).to.equal("Bad Parameters!");
-    }
+    // it("Add two Strings and throws error",function(){
+    //  try {const string_res = add("Niladri","Saha");
+    // assert.fail("Error thrown!");}
+    // catch(e){
+    //     expect(e).to.equal("Bad Parameters!");
+    // }
 
 
 
-    });
+    // });
 });

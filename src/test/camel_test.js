@@ -10,14 +10,14 @@ describe("CamelCase Integration Testing",()=>{
     console.log(result);
     expect(result).to.equal(" niladriSaha");
     });
-    it(" throws error",function(){
-     try {const result = camelCase(13);
-    assert.fail("Error thrown!");}
-    catch(e){
-        expect(e).to.equal("Bad parameter");
-    }
+    // it(" throws error",function(){
+    //  try {const result = camelCase(13);
+    // assert.fail("Error thrown!");}
+    // catch(e){
+    //     expect(e).to.equal("Bad parameter");
+    // }
 
 
 
-    });
+    // });
 });

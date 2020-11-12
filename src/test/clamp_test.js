@@ -20,14 +20,14 @@ describe("Clamp",()=>{
         
     });
    
-    it("Return a clamp for undefined range ",function(){
-        try{
-            const result = clamp(-3,undefined,undefined);
-           assert.fail("Error thrown!");
-        }catch(e){
-            expect(e).to.equal("Bad Parameters!");
-        }
-        });
+    // it("Return a clamp for undefined range ",function(){
+    //     try{
+    //         const result = clamp(-3,undefined,undefined);
+    //        assert.fail("Error thrown!");
+    //     }catch(e){
+    //         expect(e).to.equal("Bad Parameters!");
+    //     }
+    //     });
         
 
 
