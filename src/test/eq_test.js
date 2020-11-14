@@ -11,7 +11,7 @@ describe("Type equality Testing",()=>{
     expect(result).to.equal(true);
     });
     it("Checking two elements of same type 1",function(){
-        const result = eq({ 'a': 1 },{ 'a': 1 });
+        const result = eq(1,1);
         expect(result).to.equal(true);
         
     });

@@ -8,11 +8,13 @@ import difference from '../difference.js';
 describe("Difference Integration Testing",()=>{
     it("Return a new array with filtered values type 1", function(){
     const result = difference([2,1],[2,3]);
+    console.log(result);
     expect(result).to.deep.equal([1]);
     });
     it("Return a new array with filtered values error type",function(){
         const result = difference([2,1],[2,3,1]);
-        expect(result).to.deep.equal([undefined]);
+        console.log(result);
+        expect(result).to.deep.equal([]);
         
     });
     
