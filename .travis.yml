@@ -18,7 +18,7 @@ deploy:
     provider: pages
     draft: true
     skip-cleanup: true
-    api_key: $GITHUB_TOKEN #6a9e02855ea7eace51db3aeb8a78a87e153db518
+    github_tpken: $GITHUB_TOKEN #6a9e02855ea7eace51db3aeb8a78a87e153db518
     edge: true
     local_dir: build
     on:
