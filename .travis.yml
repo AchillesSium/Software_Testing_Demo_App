@@ -6,6 +6,7 @@ cache: npm
 
 install: 
     - npm install
+    - gem install travis -v 1.8.8 --no-rdoc --no-ri
 
 before_script: chmod 0777 ./node_modules/.bin/mocha
 
