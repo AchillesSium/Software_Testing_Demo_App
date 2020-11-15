@@ -6,7 +6,6 @@ cache: npm
 
 install: 
     - npm install
-    - travis setup releases --pro
 
 before_script: chmod 0777 ./node_modules/.bin/mocha
 
@@ -18,7 +17,10 @@ after_script: npm run coverage
 deploy: 
     provider: pages
     skip-cleanup: true
-    github-token: $GITHUB_TOKEN #6a9e02855ea7eace51db3aeb8a78a87e153db518 
+    api_key: $GITHUB_TOKEN #6a9e02855ea7eace51db3aeb8a78a87e153db518 
     local_dir: build
     on:
         branch: master
+
+notification:
+    - email: false
