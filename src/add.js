@@ -18,3 +18,5 @@ const add = createMathOperation((augend, addend) => augend + addend, 0)
 
 export default add
 //module.exports = add;
+
+//7e0c524108bedcfda4be30fd373fabc4f3db6564
