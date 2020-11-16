@@ -16,7 +16,7 @@ after_script: npm run coverage
 deploy: 
     provider: pages
     skip-cleanup: true
-    github_token: GITHUB_TOKEN
+    github_token: $GITHUB_TOKEN
     edge: true
     local_dir: build
     on:
