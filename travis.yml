@@ -10,7 +10,7 @@ install:
 script: 
     - yarn test
     - yarn run build
-
+    - yarn run coveralls
 
 deploy: 
     provider: pages
