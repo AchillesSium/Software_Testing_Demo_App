@@ -9,7 +9,7 @@
   "type": "module",
   "scripts": {
     "test": "nyc mocha src/test/*_test.js --exit",
-    "start": "node app.js",
+    "start": "node src/*_test.js",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "coverage": "nyc report --reporter=text-lcov | coveralls && nyc report --reporter=lcov"
   },
