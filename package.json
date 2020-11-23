@@ -8,8 +8,10 @@
   },
   "type": "module",
   "scripts": {
-    "test": "mocha 'src/test/*_test.js'",
-    "coverage": "nyc report --reporter=text-lcov | coveralls -v"
+    "test": "nyc mocha src/test/*_test.js --exit",
+    "start": "node app.js",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "coverage": "nyc report --reporter=text-lcov | coveralls && nyc report --reporter=lcov"
   },
   "author": "",
   "license": "ISC",
