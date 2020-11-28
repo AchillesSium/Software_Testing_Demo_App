@@ -13,10 +13,10 @@ describe("Setting Default Values",()=>{
     const result1 = defaultTo(undefined,5);
     expect(result1).to.equal(5);
     });
-    it("Default for falsy case 2",function(){
-        const result2 = defaultTo(null,10);
-        expect(result2).to.equal(10);
-        });
-
+   
+ it("Default for falsy case 2",function(){
+            const result2 = defaultTo(null,undefined);
+            expect(result2).to.equal(null);
+            });
 
     });

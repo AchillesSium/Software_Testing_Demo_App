@@ -6,7 +6,7 @@ import every from '../every.js';
 //const fs = require("../add");
     
 describe("Truthy Testing using every",()=>{
-    it("Checking the array type with all type of elements", function(){
+    it("Checking the array type with all type of truthy elements", function(){
     const result = every([true, 1, null, 'yes'], Boolean)
     expect(result).to.equal(false);
     });

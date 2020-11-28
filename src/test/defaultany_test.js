@@ -1,6 +1,6 @@
 import chai from 'chai';
 const expect = chai.expect;
-const assert = chai.assert;
+//const assert = chai.assert;
 //const {expect,assert} = require('chai');
 import defaultToAny from '../defaultToAny.js';
 //const fs = require("../add");
