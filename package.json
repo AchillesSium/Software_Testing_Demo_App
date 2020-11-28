@@ -8,15 +8,22 @@
   },
   "type": "module",
   "scripts": {
-    "test": "mocha 'src/test/*_test.js'",
-    "coverage": "npm run test && jest --coverage && coveralls < coverage/lcov.info"
+    "test": "nyc mocha src/test/*_test.js --exit",
+    "start": "node src/*_test.js",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "coverage": "nyc report --reporter=text-lcov | coveralls && nyc report --reporter=lcov"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.2.0",
+<<<<<<< HEAD
     "mocha": "^8.2.0",
     "npm": "^6.14.9"
+=======
+    "mocha": "^8.2.1",
+    "ny": "^1.7.0"
+>>>>>>> bafd3cc4bbd004efda0ead5a0986ba2f0515ec4a
   },
   "repository": {
     "type": "git",
