@@ -27,6 +27,7 @@ before_script: chmod 0777 ./node_modules/.bin/mocha
 #     - chmod +x ./cc-test-reporter
 #     - ./cc-test-reporter before-build
   
+
 script:  
     - npm install
     - npm run test
