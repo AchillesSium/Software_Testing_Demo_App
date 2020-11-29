@@ -14,9 +14,9 @@ describe("Setting Default Values",()=>{
     expect(result1).to.equal(5);
     });
    
- it("Default for falsy case 2",function(){
-            const result2 = defaultTo(null,undefined);
-            expect(result2).to.equal(null);
-            });
+//  it("Default for falsy case 2",function(){
+//             const result2 = defaultTo(null,undefined);
+//             expect(result2).to.equal(null);
+//             });
 
-    });
+//     });
