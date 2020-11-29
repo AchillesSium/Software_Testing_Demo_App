@@ -9,7 +9,7 @@ env:
   # Code Climate Reporter gotten from code climate
   - CC_TEST_REPORTER_ID=da1fee3ce1508e9ff73dc6a7481d5ec48a7978765427e1bb05eb4ee46d35af857
 
-# cache: npm
+cache: npm
 
 # install: 
 #     - npm install
