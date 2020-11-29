@@ -7,8 +7,7 @@ node_js:
 env:
   global:
   # Code Climate Reporter gotten from code climate
-    - COVERALLS_REPO_TOKEN: "EDBH2HdWWvhNABZD1fvvqFTYudGWbF1wd"
-    - COVERALLS_GIT_BRANCH: "master"
+  - CC_TEST_REPORTER_ID=da1fee3ce1508e9ff73dc6a7481d5ec48a7978765427e1bb05eb4ee46d35af857
 
 # cache: npm
 
