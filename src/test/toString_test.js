@@ -6,7 +6,8 @@ const assert = chai.assert;
 describe("To String checking",()=> {
     it("Case 1", function(){
         const result = toString(null);
-        expect(result).to.equal(null);
+        console.log(result);
+        expect(result).to.equal('null');
     });
     it("Case 2",function(){
         const result = toString(-0);

@@ -8,7 +8,7 @@
   },
   "type": "module",
   "scripts": {
-    "test": "nyc mocha src/test/*_test.js --exit",
+    "test": "mocha src/test/*_test.js --exit",
     "start": "node src/*_test.js",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "coverage": "nyc report --reporter=text-lcov | coveralls && nyc report --reporter=lcov"
@@ -19,6 +19,7 @@
     "chai": "^4.2.0",
     "coverage": "^0.4.1",
     "mocha": "^8.2.1",
+    "npx": "^10.2.2",
     "ny": "^1.7.0"
   },
   "repository": {
