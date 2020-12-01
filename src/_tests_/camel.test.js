@@ -2,6 +2,7 @@ import chai from 'chai';
 const expect = chai.expect;
 const assert = chai.assert;
 //const {expect,assert} = require('chai');
+//const {camelCase} = require('../camelCase.js');
 import camelCase from '../camelCase.js';
 //const fs = require("../add");
 describe("CamelCase Integration Testing",()=>{
