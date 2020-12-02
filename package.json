@@ -43,7 +43,8 @@
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "test-with-coverage": "jest ",
-    "test" : "mocha test --coverage"
+    "test" : "mocha test --coverage",
+    "posttest": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "author": "",
   "license": "ISC",
