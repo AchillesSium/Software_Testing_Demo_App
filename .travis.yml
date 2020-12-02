@@ -29,7 +29,7 @@ before_script: chmod 0777 ./node_modules/.bin/mocha
 
 script:  
     - npm install
-    - npm run test
+    - npm run coverage
   
 after_script:  
     - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
