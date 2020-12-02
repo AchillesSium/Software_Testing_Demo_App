@@ -41,7 +41,7 @@
     "test-coveralls": "nyc npm run mocha && shx cat ./coverage/lcov.info | node ./bin/coveralls.js --verbose",
     "test_mocha": "mocha src/_tests_/*_test.js --exit",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "coverage": "nyc --reporter=lcov --reporter=html --reporter=json mocha --require _tests_/*_test.js",
+    "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "test-with-coverage": "jest ",
     "test" : "mocha test --coverage"
   },
