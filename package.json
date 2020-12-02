@@ -16,7 +16,7 @@
       "lcov"
     ],
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx,ts,tsx}",
+      "src/*.{js,jsx,ts,tsx}",
       "!<rootDir>/node_modules/"
     ],
     "moduleFileExtensions": [
@@ -26,7 +26,7 @@
      "coverageThreshold": {
       "global": {
         "lines": 20,
-        "statements": 90
+        "statements": 50
       }
     },
     "testPathIgnorePatterns": [
