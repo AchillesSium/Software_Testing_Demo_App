@@ -23,7 +23,7 @@
       "js",
       "json"
     ],
-     "coverageThreshold": {
+    "coverageThreshold": {
       "global": {
         "lines": 20,
         "statements": 50
@@ -42,7 +42,7 @@
     "test_mocha": "mocha src/_tests_/*_test.js --exit",
     "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "test-with-coverage": "jest ",
-    "test" : "mocha test --coverage",
+    "test": "mocha test --coverage",
     "posttest": "jest --coverage && cat ./coverage/lcov.info | coveralls -v"
   },
   "author": "",
