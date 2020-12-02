@@ -40,11 +40,10 @@
     "test-cov": "nyc npm run mocha",
     "test-coveralls": "nyc npm run mocha && shx cat ./coverage/lcov.info | node ./bin/coveralls.js --verbose",
     "test_mocha": "mocha src/_tests_/*_test.js --exit",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "test-with-coverage": "jest ",
     "test" : "mocha test --coverage",
-    "posttest": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "posttest": "jest --coverage && cat ./coverage/lcov.info | coveralls -v"
   },
   "author": "",
   "license": "ISC",
